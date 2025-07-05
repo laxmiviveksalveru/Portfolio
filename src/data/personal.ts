@@ -2,7 +2,7 @@
 export const personalInfo = {
   // Basic Information
   name: "Laxmi Vivek Salveru",
-  title: "AI/DS Student & Developer",
+  title: "AI ML Engeeneer",
   tagline: "I am seeking a challenging position in a reputed organization where I can learn new skills, expand my knowledge, and leverage my experience.",
   
   // Contact Information
@@ -20,7 +20,7 @@ export const personalInfo = {
     {
       degree: "B.Tech in AI & Data Science",
       institution: "KL University Hyderabad",
-      duration: "05/2021 - Present",
+      duration: "05/2021 - 08/2025",
       location: "Hyderabad",
       cgpa: "8.75",
       courses: "Data Structures and Algorithms, Machine Learning, NLP, Computer Vision"
@@ -54,7 +54,7 @@ export const personalInfo = {
   // Skills - Organized by categories
   skills: {
     "Cloud Platforms": ["AWS", "Azure"],
-    "Programming": ["Python", "HTML", "CSS", "MATLAB"],
+    "Programming": ["Python", "HTML", "CSS"],
     "AI/ML": ["Machine Learning", "TensorFlow", "Computer Vision", "Deep Learning", "NLP"],
     "Tools & Technologies": ["ML Tools", "Cloud Computing"]
   },

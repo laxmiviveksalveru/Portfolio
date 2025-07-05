@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { personalInfo } from "@/data/personal";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import { getPortfolioProjects, PortfolioProject } from "@/services/github";
 import { ExternalLink, Github, Star, GitFork } from "lucide-react";
@@ -166,18 +167,25 @@ export function Projects() {
                       </div>
                     </div>
 
-                    {/* GitHub Link */}
-                    <div className="pt-2">
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+                    {/* GitHub Repository Button */}
+                    <div className="pt-2 flex gap-3">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        asChild
+                        className="flex-1 border-primary/30 hover:bg-primary/10 hover:border-primary/50"
                       >
-                        <Github className="w-4 h-4" />
-                        <span className="text-sm font-medium">View on GitHub</span>
-                        <ExternalLink className="w-3 h-3" />
-                      </a>
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center gap-2"
+                        >
+                          <Github className="w-4 h-4" />
+                          View Repository
+                          <ExternalLink className="w-3 h-3" />
+                        </a>
+                      </Button>
                     </div>
                   </CardContent>
 
