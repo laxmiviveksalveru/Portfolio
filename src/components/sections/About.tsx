@@ -47,7 +47,7 @@ export function About() {
               <Card className="glass card-hover">
                 <CardContent className="p-6 text-center">
                   <div className="text-3xl font-bold text-primary mb-2">
-                    {personalInfo.projects.length}+
+                    10+
                   </div>
                   <div className="text-sm text-muted-foreground">
                     Projects Completed

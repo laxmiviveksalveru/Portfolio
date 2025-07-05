@@ -10,9 +10,9 @@ export const personalInfo = {
     email: "laxmiviveksalveru@gmail.com",
     phone: "8897150515",
     location: "Hyderabad, India",
-    linkedin: "linkedin.com/in/laxmi-vivek-52558a232",
+    linkedin: "www.linkedin.com/in/laxmivivek",
     github: "github.com/laxmiviveksalveru",
-    stackoverflow: "stackoverflow.com/"
+    stackoverflow: "https://stackoverflow.com/users/22213441/vivek-salve"
   },
 
   // Education
@@ -22,7 +22,7 @@ export const personalInfo = {
       institution: "KL University Hyderabad",
       duration: "05/2021 - Present",
       location: "Hyderabad",
-      cgpa: "8.6",
+      cgpa: "8.75",
       courses: "Data Structures and Algorithms, Machine Learning, NLP, Computer Vision"
     },
     {
@@ -59,35 +59,7 @@ export const personalInfo = {
     "Tools & Technologies": ["ML Tools", "Cloud Computing"]
   },
 
-  // Personal Projects
-  projects: [
-    {
-      title: "Spotify Music Recommendation",
-      description: "Developed a music recommendation system using machine learning algorithms to suggest songs based on user preferences and listening history.",
-      technologies: ["Python", "Machine Learning", "Data Analysis"],
-      category: "Machine Learning"
-    },
-    {
-      title: "Online Attendance Using CV",
-      description: "Implemented an online attendance system utilizing computer vision to automatically track and record student attendance.",
-      technologies: ["Python", "Computer Vision", "OpenCV"],
-      category: "Computer Vision"
-    },
-    {
-      title: "Heart Disease Prediction",
-      description: "Created a predictive model for heart disease using machine learning techniques to analyze patient data and predict risks.",
-      technologies: ["Python", "Machine Learning", "Healthcare Analytics"],
-      category: "Healthcare AI"
-    },
-    {
-      title: "AI Powered Gym Website",
-      description: "Planning and prototyping an AI-driven gym website (currently in planning stage)",
-      duration: "10/2024 - Present",
-      status: "In Development",
-      technologies: ["AI", "Web Development", "Fitness Tech"],
-      category: "Web Development"
-    }
-  ],
+
 
   // Certificates
   certificates: [
