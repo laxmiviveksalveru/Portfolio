@@ -17,7 +17,7 @@ export function About() {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Passionate AI/DS student with hands-on experience in machine learning, 
+            {personalInfo.title} with hands-on experience in machine learning, 
             computer vision, and cloud technologies.
           </p>
         </motion.div>
@@ -36,9 +36,9 @@ export function About() {
                 {personalInfo.tagline}
               </p>
               <p className="text-foreground/70 leading-relaxed">
-                Currently pursuing B.Tech in AI & Data Science at KL University Hyderabad 
-                with a CGPA of {personalInfo.education[0].cgpa}. I have hands-on experience 
-                with cloud platforms, machine learning frameworks, and computer vision technologies.
+                Currently pursuing {personalInfo.education[0].degree} at {personalInfo.education[0].institution} 
+                with a CGPA of {personalInfo.education[0].cgpa}. My coursework includes {personalInfo.education[0].courses}. 
+                I have hands-on experience with cloud platforms, machine learning frameworks, and computer vision technologies.
               </p>
             </div>
 

@@ -84,11 +84,6 @@ export const personalInfo = {
       validity: "10/2024 - 10/2026"
     },
     {
-      name: "Azure AI Fundamental 900",
-      issuer: "Microsoft",
-      validity: "04/2025 - Present"
-    },
-    {
       name: "Microsoft Certified Azure AI Fundamentals",
       issuer: "Microsoft",
       year: "2024"
