@@ -21,19 +21,19 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 relative">
-      <div className="container mx-auto px-6">
+    <section id="contact" className="py-12 sm:py-16 lg:py-20 relative">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold hero-title mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold hero-title mb-4 sm:mb-6">
             Let's Connect
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             Ready to discuss opportunities or collaborate on exciting AI projects? 
             I'd love to hear from you.
           </p>
@@ -41,7 +41,7 @@ export function Contact() {
 
         <div className="max-w-4xl mx-auto">
           {/* Contact Cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
             {/* Email */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}

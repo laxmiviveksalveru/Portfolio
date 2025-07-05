@@ -54,23 +54,23 @@ export function FloatingNav() {
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: 100, opacity: 0 }}
-          className="fixed right-6 top-1/2 transform -translate-y-1/2 z-40"
+          className="fixed right-4 sm:right-6 top-1/2 transform -translate-y-1/2 z-40 hidden lg:block"
         >
-          <div className="flex flex-col space-y-3">
+          <div className="flex flex-col space-y-2 sm:space-y-3">
             {quickNavItems.map((item) => (
               <motion.button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                className={`w-12 h-12 rounded-full glass flex items-center justify-center text-xl transition-all duration-300 ${
+                className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full glass flex items-center justify-center text-lg sm:text-xl transition-all duration-300 ${
                   activeSection === item.href.slice(1)
                     ? "bg-primary/20 glow-primary border-primary/30"
                     : "border-border/30 hover:border-primary/50"
                 }`}
                 title={item.name}
               >
-                {item.icon}
+                <span className="text-sm sm:text-base">{item.icon}</span>
               </motion.button>
             ))}
           </div>

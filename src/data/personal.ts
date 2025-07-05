@@ -2,8 +2,9 @@
 export const personalInfo = {
   // Basic Information
   name: "Laxmi Vivek Salveru",
-  title: "AI ML Engeeneer",
+  title: "AI ML Engineer",
   tagline: "I am seeking a challenging position in a reputed organization where I can learn new skills, expand my knowledge, and leverage my experience.",
+  website: "https://laxmiviveksalveru.me",
   
   // Contact Information
   contact: {

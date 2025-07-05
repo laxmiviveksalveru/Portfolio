@@ -29,25 +29,25 @@ export function Projects() {
     loadProjects();
   }, []);
   return (
-    <section id="projects" className="py-20 relative">
-      <div className="container mx-auto px-6">
+    <section id="projects" className="py-12 sm:py-16 lg:py-20 relative">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold hero-title mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold hero-title mb-4 sm:mb-6">
             Featured Projects
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             Innovative AI and machine learning solutions I've developed
           </p>
         </motion.div>
 
         {loading ? (
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
             {[...Array(4)].map((_, index) => (
               <motion.div
                 key={index}
