@@ -1,13 +1,33 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { ThreeScene } from "@/components/ThreeScene";
+import { Navigation } from "@/components/Navigation";
+import { FloatingNav } from "@/components/FloatingNav";
+import { Hero } from "@/components/sections/Hero";
+import { About } from "@/components/sections/About";
+import { Education } from "@/components/sections/Education";
+import { Projects } from "@/components/sections/Projects";
+import { Certificates } from "@/components/sections/Certificates";
+import { Contact } from "@/components/sections/Contact";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <main className="relative">
+      {/* Three.js Background */}
+      <ThreeScene />
+      
+      {/* Navigation */}
+      <Navigation />
+      <FloatingNav />
+      
+      {/* Page Sections */}
+      <div id="home">
+        <Hero />
       </div>
-    </div>
+      <About />
+      <Education />
+      <Projects />
+      <Certificates />
+      <Contact />
+    </main>
   );
 };
 
